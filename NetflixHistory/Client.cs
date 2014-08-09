@@ -35,7 +35,7 @@ namespace NetflixHistory
         public ViewingHistory History()
         {
 
-            var request = new RestRequest("/WiViewingActivity");
+            var request = new RestRequest("/YourAccount");
             IRestResponse response = _webClient.Execute(request);
 
             var xsrf = ParseXsrfToken(response.Content);
